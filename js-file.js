@@ -47,6 +47,30 @@ secondPara.textContent = 'ME TOO';
 // WAY 4 actually it is way 3 in odin
 
 const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => {
-    alert('hello worldssdfsd');
+// btn.addEventListener('click', function (e) {
+//     console.log(e);
+// });
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
 });
+
+// NODES LIST
+
+const buttons = document.querySelectorAll('button');
+/*
+buttons is a node list 
+node list is like an array
+
+use forEach method to go through(iterate) through each buton
+
+each one will add a click listener
+
+*/
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
+
+
