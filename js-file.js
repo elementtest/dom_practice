@@ -25,5 +25,28 @@ dumAssDiv.appendChild(secondPara);
 secondPara.textContent = 'ME TOO';
 
 //MISTAKE did NOT check to make sure the references were right
-
 //MISTAKE create a variable referencing document body see line 1!
+
+
+
+/* START EVENT LISTENER SECTION */
+// WAY 1
+// function alertFunction() {
+//     alert('YAY YOU DID IT');
+// };
+
+// btn.addEventListener('click', alertFunction);
+
+//WAY 2
+// const btn = document.querySelector('#butAsson');
+// btn.onclick = () => alert('Hello World');
+
+//WAY 3
+//only in html file 
+
+// WAY 4 actually it is way 3 in odin
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    alert('hello worldssdfsd');
+});
